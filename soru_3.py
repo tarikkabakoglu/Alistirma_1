@@ -1,18 +1,10 @@
-def carp(My_list):
-    
-    result=1   
-    for x in My_list:
-        result=result * x
-    return result
+import math
 
-i=0
-e=[]
-
-while True:
-    i=i+1
-    x=1/i
-    e.append(x)
-    
-    if len(e)>100:
-        break
-print(carp(e))
+toplam=1 #0!=1 olduğu için 1 ekledik
+faktöriyel=1 
+for i in range(1,100000):
+	faktöriyel*=i
+	toplam+=(1/(faktöriyel))
+e=toplam
+print(e)
+print(math.e)
